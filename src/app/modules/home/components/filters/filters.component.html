@@ -1,0 +1,9 @@
+<mat-form-field>
+    <mat-label>Nome do time</mat-label>
+    <input
+    matInput
+    type="text"
+    [(ngModel)]="nameFilterBind"
+    (ngModelChange)="emitNameFilter()"
+    />
+</mat-form-field>

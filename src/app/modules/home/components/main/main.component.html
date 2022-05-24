@@ -1,0 +1,4 @@
+<app-filters [(nameFilterBind)]="teamsName"></app-filters>
+<app-list [teams]="teams$ | async"></app-list> <!-- Pipe que transforma o Observable em Objeto comum || json - Retorna esse objeto para o tipo JSON -->
+
+<!-- <pre> {{ teams$ | async | json }} </pre>  -->

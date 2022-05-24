@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <th>Classificação</th>
+        <!-- <th></th> -->
+        <th>Nome</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let team of teams">
+            <td>
+                {{ team.position }}
+            </td>
+            <!-- <td>
+                <img [src]="team.team.shield" height="30"/>
+            </td> -->
+            <td>
+                {{ team.team.team_name }}
+            </td>
+        </tr>
+    </tbody>
+</table>

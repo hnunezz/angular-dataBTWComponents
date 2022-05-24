@@ -1,0 +1,522 @@
+[
+    {
+        "position": 1,
+        "points": 73,
+        "team": {
+            "team_id": 5,
+            "team_name": "Chapecoense",
+            "initials": "CHA",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999c82dc52e.svg"
+        },
+        "games": 38,
+        "wins": 20,
+        "ties": 13,
+        "losses": 5,
+        "goals_pro": 42,
+        "goals_against": 21,
+        "goals_difference": 21,
+        "profit": 64,
+        "position_variation": 1,
+        "last_games": [
+            "v",
+            "e",
+            "v",
+            "d",
+            "v"
+        ]
+    },
+    {
+        "position": 2,
+        "points": 73,
+        "team": {
+            "team_id": 33,
+            "team_name": "América-MG",
+            "initials": "AMG",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999cac0b5cc.svg"
+        },
+        "games": 38,
+        "wins": 20,
+        "ties": 13,
+        "losses": 5,
+        "goals_pro": 43,
+        "goals_against": 23,
+        "goals_difference": 20,
+        "profit": 64,
+        "position_variation": -1,
+        "last_games": [
+            "e",
+            "e",
+            "e",
+            "e",
+            "v"
+        ]
+    },
+    {
+        "position": 3,
+        "points": 61,
+        "team": {
+            "team_id": 43,
+            "team_name": "Juventude",
+            "initials": "JUV",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999cb997a01.svg"
+        },
+        "games": 38,
+        "wins": 17,
+        "ties": 10,
+        "losses": 11,
+        "goals_pro": 52,
+        "goals_against": 42,
+        "goals_difference": 10,
+        "profit": 53.5,
+        "position_variation": 1,
+        "last_games": [
+            "d",
+            "v",
+            "d",
+            "v",
+            "v"
+        ]
+    },
+    {
+        "position": 4,
+        "points": 61,
+        "team": {
+            "team_id": 204,
+            "team_name": "Cuiabá",
+            "initials": "CUI",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999e4424264.svg"
+        },
+        "games": 38,
+        "wins": 17,
+        "ties": 10,
+        "losses": 11,
+        "goals_pro": 48,
+        "goals_against": 40,
+        "goals_difference": 8,
+        "profit": 53.5,
+        "position_variation": -1,
+        "last_games": [
+            "e",
+            "v",
+            "v",
+            "d",
+            "d"
+        ]
+    },
+    {
+        "position": 5,
+        "points": 58,
+        "team": {
+            "team_id": 95,
+            "team_name": "CSA",
+            "initials": "CSA",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999dac914d4.svg"
+        },
+        "games": 38,
+        "wins": 16,
+        "ties": 10,
+        "losses": 12,
+        "goals_pro": 50,
+        "goals_against": 37,
+        "goals_difference": 13,
+        "profit": 50.9,
+        "position_variation": 0,
+        "last_games": [
+            "d",
+            "e",
+            "v",
+            "e",
+            "e"
+        ]
+    },
+    {
+        "position": 6,
+        "points": 57,
+        "team": {
+            "team_id": 120,
+            "team_name": "Sampaio Corrêa",
+            "initials": "SAM",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999dd07831b.svg"
+        },
+        "games": 38,
+        "wins": 17,
+        "ties": 6,
+        "losses": 15,
+        "goals_pro": 50,
+        "goals_against": 38,
+        "goals_difference": 12,
+        "profit": 50,
+        "position_variation": 1,
+        "last_games": [
+            "d",
+            "v",
+            "v",
+            "v",
+            "v"
+        ]
+    },
+    {
+        "position": 7,
+        "points": 57,
+        "team": {
+            "team_id": 61,
+            "team_name": "Ponte Preta",
+            "initials": "PON",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999d718e8b0.svg"
+        },
+        "games": 38,
+        "wins": 16,
+        "ties": 9,
+        "losses": 13,
+        "goals_pro": 54,
+        "goals_against": 49,
+        "goals_difference": 5,
+        "profit": 50,
+        "position_variation": 1,
+        "last_games": [
+            "e",
+            "v",
+            "d",
+            "v",
+            "v"
+        ]
+    },
+    {
+        "position": 8,
+        "points": 57,
+        "team": {
+            "team_id": 117,
+            "team_name": "Operário-PR",
+            "initials": "OPE",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999dcc8ff9f.svg"
+        },
+        "games": 38,
+        "wins": 15,
+        "ties": 12,
+        "losses": 11,
+        "goals_pro": 40,
+        "goals_against": 34,
+        "goals_difference": 6,
+        "profit": 50,
+        "position_variation": 1,
+        "last_games": [
+            "v",
+            "v",
+            "d",
+            "v",
+            "v"
+        ]
+    },
+    {
+        "position": 9,
+        "points": 55,
+        "team": {
+            "team_id": 6,
+            "team_name": "Avaí",
+            "initials": "AVA",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999c8488adb.svg"
+        },
+        "games": 38,
+        "wins": 16,
+        "ties": 7,
+        "losses": 15,
+        "goals_pro": 45,
+        "goals_against": 49,
+        "goals_difference": -4,
+        "profit": 48.2,
+        "position_variation": -3,
+        "last_games": [
+            "e",
+            "e",
+            "v",
+            "v",
+            "d"
+        ]
+    },
+    {
+        "position": 10,
+        "points": 52,
+        "team": {
+            "team_id": 90,
+            "team_name": "CRB",
+            "initials": "CRB",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999da50b853.svg"
+        },
+        "games": 38,
+        "wins": 15,
+        "ties": 7,
+        "losses": 16,
+        "goals_pro": 48,
+        "goals_against": 47,
+        "goals_difference": 1,
+        "profit": 45.6,
+        "position_variation": 0,
+        "last_games": [
+            "v",
+            "d",
+            "v",
+            "d",
+            "v"
+        ]
+    },
+    {
+        "position": 11,
+        "points": 49,
+        "team": {
+            "team_id": 37,
+            "team_name": "Cruzeiro",
+            "initials": "CRU",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999cb17a444.svg"
+        },
+        "games": 38,
+        "wins": 14,
+        "ties": 13,
+        "losses": 11,
+        "goals_pro": 39,
+        "goals_against": 32,
+        "goals_difference": 7,
+        "profit": 48.2,
+        "position_variation": 1,
+        "last_games": [
+            "d",
+            "d",
+            "v",
+            "e",
+            "e"
+        ]
+    },
+    {
+        "position": 12,
+        "points": 49,
+        "team": {
+            "team_id": 48,
+            "team_name": "Brasil de Pelotas",
+            "initials": "BRA",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999cc025f7c.svg"
+        },
+        "games": 38,
+        "wins": 11,
+        "ties": 16,
+        "losses": 11,
+        "goals_pro": 31,
+        "goals_against": 33,
+        "goals_difference": -2,
+        "profit": 43,
+        "position_variation": -1,
+        "last_games": [
+            "v",
+            "d",
+            "e",
+            "e",
+            "d"
+        ]
+    },
+    {
+        "position": 13,
+        "points": 48,
+        "team": {
+            "team_id": 54,
+            "team_name": "Guarani",
+            "initials": "GUA",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999cc97ce63.svg"
+        },
+        "games": 38,
+        "wins": 13,
+        "ties": 9,
+        "losses": 16,
+        "goals_pro": 41,
+        "goals_against": 48,
+        "goals_difference": -7,
+        "profit": 42.1,
+        "position_variation": 0,
+        "last_games": [
+            "d",
+            "d",
+            "d",
+            "d",
+            "d"
+        ]
+    },
+    {
+        "position": 14,
+        "points": 48,
+        "team": {
+            "team_id": 102,
+            "team_name": "Vitória",
+            "initials": "VIT",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999db697241.svg"
+        },
+        "games": 38,
+        "wins": 11,
+        "ties": 15,
+        "losses": 12,
+        "goals_pro": 45,
+        "goals_against": 45,
+        "goals_difference": 0,
+        "profit": 42.1,
+        "position_variation": 1,
+        "last_games": [
+            "e",
+            "e",
+            "v",
+            "v",
+            "v"
+        ]
+    },
+    {
+        "position": 15,
+        "points": 46,
+        "team": {
+            "team_id": 205,
+            "team_name": "Confiança",
+            "initials": "CON",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999e45c52f1.svg"
+        },
+        "games": 38,
+        "wins": 12,
+        "ties": 10,
+        "losses": 16,
+        "goals_pro": 38,
+        "goals_against": 46,
+        "goals_difference": -8,
+        "profit": 40.4,
+        "position_variation": -1,
+        "last_games": [
+            "d",
+            "v",
+            "d",
+            "e",
+            "d"
+        ]
+    },
+    {
+        "position": 16,
+        "points": 44,
+        "team": {
+            "team_id": 74,
+            "team_name": "Náutico",
+            "initials": "NAU",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999d8a748ce.svg"
+        },
+        "games": 38,
+        "wins": 10,
+        "ties": 14,
+        "losses": 14,
+        "goals_pro": 35,
+        "goals_against": 42,
+        "goals_difference": -7,
+        "profit": 38.6,
+        "position_variation": 0,
+        "last_games": [
+            "e",
+            "d",
+            "v",
+            "e",
+            "e"
+        ]
+    },
+    {
+        "position": 17,
+        "points": 39,
+        "team": {
+            "team_id": 9,
+            "team_name": "Figueirense",
+            "initials": "FIG",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999c88acad7.svg"
+        },
+        "games": 38,
+        "wins": 9,
+        "ties": 12,
+        "losses": 17,
+        "goals_pro": 35,
+        "goals_against": 49,
+        "goals_difference": -14,
+        "profit": 34.2,
+        "position_variation": 0,
+        "last_games": [
+            "d",
+            "v",
+            "d",
+            "d",
+            "d"
+        ]
+    },
+    {
+        "position": 18,
+        "points": 37,
+        "team": {
+            "team_id": 76,
+            "team_name": "Paraná",
+            "initials": "PAR",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999d8ce59bd.svg"
+        },
+        "games": 38,
+        "wins": 9,
+        "ties": 10,
+        "losses": 19,
+        "goals_pro": 34,
+        "goals_against": 50,
+        "goals_difference": -16,
+        "profit": 32.5,
+        "position_variation": 0,
+        "last_games": [
+            "v",
+            "d",
+            "d",
+            "d",
+            "e"
+        ]
+    },
+    {
+        "position": 19,
+        "points": 34,
+        "team": {
+            "team_id": 66,
+            "team_name": "Botafogo-SP",
+            "initials": "BOT",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999d7dd27d9.svg"
+        },
+        "games": 38,
+        "wins": 8,
+        "ties": 10,
+        "losses": 20,
+        "goals_pro": 26,
+        "goals_against": 39,
+        "goals_difference": -13,
+        "profit": 29.8,
+        "position_variation": 0,
+        "last_games": [
+            "v",
+            "e",
+            "d",
+            "d",
+            "d"
+        ]
+    },
+    {
+        "position": 20,
+        "points": 29,
+        "team": {
+            "team_id": 52,
+            "team_name": "Oeste",
+            "initials": "OES",
+            "shield": "https:\/\/apifutebol.s3.sa-east-1.amazonaws.com\/escudos\/5f999cc618b80.svg"
+        },
+        "games": 38,
+        "wins": 7,
+        "ties": 8,
+        "losses": 23,
+        "goals_pro": 28,
+        "goals_against": 60,
+        "goals_difference": -32,
+        "profit": 25.4,
+        "position_variation": 0,
+        "last_games": [
+            "v",
+            "d",
+            "d",
+            "v",
+            "d"
+        ]
+    }
+]
