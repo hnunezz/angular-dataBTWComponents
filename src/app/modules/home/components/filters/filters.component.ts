@@ -9,17 +9,24 @@ export class FiltersComponent implements OnInit {
 
     @Input() public nameFilterBind!: string;
 
-    @Output() public nameFilterChange: EventEmitter<string>;
+    @Output() public nameFilterBindChange: EventEmitter<string>;
+    /*
+    ATENÇÃO
+    Para que ocorra corretamente a ligação bidirecional
+    O nome do Input (Entrada) e Output (Saida) devem ser Iguais.
+    Ex. Input  - nome
+        Output - nome'Change'
+    */
 
     constructor() {
-        this.nameFilterChange = new EventEmitter<string>();
+        this.nameFilterBindChange = new EventEmitter<string>();
     }
 
     ngOnInit(): void {
     }
 
     public emitNameFilter(): void{
-        this.nameFilterChange.emit(this.nameFilterBind);
+        this.nameFilterBindChange.emit(this.nameFilterBind);
     }
 
 }

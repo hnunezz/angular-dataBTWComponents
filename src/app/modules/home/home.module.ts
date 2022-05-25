@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
@@ -9,6 +9,7 @@ import { FiltersComponent } from './components/filters/filters.component';
 import { ListComponent } from './components/list/list.component';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import { FilterService } from './services/filter.service';
 
 
 @NgModule({
@@ -25,7 +26,9 @@ import { FormsModule } from '@angular/forms';
         FormsModule
     ],
     providers: [
-        TeamsService
-    ]
+        TeamsService,
+        FilterService
+    ],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HomeModule { }

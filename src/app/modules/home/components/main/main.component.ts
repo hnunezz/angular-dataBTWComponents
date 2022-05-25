@@ -34,8 +34,8 @@ export class MainComponent implements OnInit {
         */
     }
 
-    public updateFilter(): void{
-
+    public updateFilter(): void {
+        console.log(this.teamsName)
     }
 
 }
