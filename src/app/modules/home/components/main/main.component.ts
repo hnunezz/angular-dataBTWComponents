@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Team } from 'src/app/shared/models/team';
+import { FilterService } from '../../services/filter.service';
 import { TeamsService } from '../../services/teams.service';
 
 @Component({
@@ -10,15 +11,17 @@ import { TeamsService } from '../../services/teams.service';
 })
 export class MainComponent implements OnInit {
 
-    public teamsName!: string;
-
+    public teamName!: string;
     public teams$: Observable<Team[]>;
-    /*
-    `$` Convenção do Angular referente a boas práticas,
-    Sinaliza que essa variavel é do tipo Observable
-    */
+    /*`$` Convenção do Angular referente a boas práticas,
+    Sinaliza que essa variavel é do tipo Observable*/
 
-    constructor(private teamsService: TeamsService) {
+    //[CompontenteEmissor]="ComponenteDestino"
+
+    constructor(
+        private teamsService: TeamsService,
+        private filterService: FilterService
+    ) {
         this.teams$ = new Observable<Team[]>();
     }
 
@@ -35,7 +38,7 @@ export class MainComponent implements OnInit {
     }
 
     public updateFilter(): void {
-        console.log(this.teamsName)
+        this.filterService.setFilteredTeams(this.teamName)
     }
 
 }
