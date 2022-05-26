@@ -1,0 +1,32 @@
+table {
+    width: 80%;
+    background: #202124;
+    thead {
+        th {
+            color: #9aa0a6;
+            font-size: 12px;
+            font-weight: normal;
+            padding: 11px 2px;
+        }
+    }
+    tbody {
+        tr {
+            // display: table;s
+            border: 1px solid grey;
+            border-spacing: 2px;
+            td {
+                color: #bdc1c6;
+                font-size: 14px;
+                line-height: 0;
+                height: 40px;
+                padding: 0;
+                vertical-align: middle;
+                text-align: center;
+
+                &.cell-team-name {
+                    text-align: initial;
+                }
+            }
+        }
+    }
+}

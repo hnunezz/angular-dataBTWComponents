@@ -48,7 +48,11 @@ export class MainComponent implements OnInit {
 
     private initSubscription(): void {
         this.teamsFilterSubscription = this.filterService.getFilteredTeams().subscribe((filterValue: string) => {
-            this.filteredTeams = this.teams.filter(x => x.team.team_id.toString() == filterValue)
+            if(filterValue == null){
+                this.filteredTeams = this.teams
+            } else{
+                this.filteredTeams = this.teams.filter(x => x.team.team_id.toString() == filterValue)
+            }
         })
     }
 }

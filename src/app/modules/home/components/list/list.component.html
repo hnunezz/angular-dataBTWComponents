@@ -1,19 +1,51 @@
 <table>
     <thead>
-        <th>Classificação</th>
-        <!-- <th></th> -->
-        <th>Nome</th>
+        <th>Clube</th>
+        <th></th>
+        <th></th>
+        <th>points</th>
+        <th>VIT</th>
+        <th>E</th>
+        <th>DER</th>
+        <th>GP</th>
+        <th>GC</th>
+        <th>SG</th>
+        <th>Últimas cinco</th>
     </thead>
     <tbody>
         <tr *ngFor="let team of teams">
             <td>
                 {{ team.position }}
             </td>
-            <!-- <td>
-                <img [src]="team.team.shield" height="30"/>
-            </td> -->
             <td>
+                <img [src]="team.team.shield" height="30"/>
+            </td>
+            <td class="cell-team-name">
                 {{ team.team.team_name }}
+            </td>
+            <td>
+                {{ team.points }}
+            </td>
+            <td>
+                {{ team.wins}}
+            </td>
+            <td>
+                {{ team.ties}}
+            </td>
+            <td>
+                {{ team.losses}}
+            </td>
+            <td>
+                {{ team.goals_pro}}
+            </td>
+            <td>
+                {{ team.goals_against}}
+            </td>
+            <td>
+                {{ team.goals_difference}}
+            </td>
+            <td>
+               <span *ngFor="let LG of team.last_games" [style.color]="LG =='v' ? 'green' : LG == 'd' ? 'red' : 'yellow'"> {{ LG }} </span>
             </td>
         </tr>
     </tbody>
