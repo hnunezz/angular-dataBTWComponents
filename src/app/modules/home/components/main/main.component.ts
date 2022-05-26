@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { lastValueFrom, Observable, Subscription } from 'rxjs';
 import { Team } from 'src/app/shared/models/team';
 import { FilterService } from '../../services/filter.service';
 import { TeamsService } from '../../services/teams.service';
@@ -11,34 +11,44 @@ import { TeamsService } from '../../services/teams.service';
 })
 export class MainComponent implements OnInit {
 
-    public teamName!: string;
-    public teams$: Observable<Team[]>;
+    public teamName!: string;//Propriedade que recebe o valor do filtro.
+    public teams: Team[];
     /*`$` Convenção do Angular referente a boas práticas,
     Sinaliza que essa variavel é do tipo Observable*/
 
     //[CompontenteEmissor]="ComponenteDestino"
 
+    public filteredTeams: Array<Team>;
+    private teamsFilterSubscription: Subscription;
+
     constructor(
         private teamsService: TeamsService,
         private filterService: FilterService
     ) {
-        this.teams$ = new Observable<Team[]>();
+        this.teams = new Array<Team>();
+        this.filteredTeams = new Array<Team>();
+        this.teamsFilterSubscription = new Subscription();
     }
 
-    ngOnInit(): void {
-        this.getTeams();
+    public async ngOnInit(): Promise<void> {
+        await this.getTeams();
+        this.initSubscription();
     }
 
-    private getTeams(): void {
-        this.teams$ = this.teamsService.getTeams();
-        /*
-        Requisão para a TeamService onde é retornado
-        todos os itens da Interface no tipo Observable
-        */
+    private async getTeams(): Promise<void> {
+        const response = await lastValueFrom(this.teamsService.getTeams()) as Array<Team>;
+        //LastValueFrom => toPromise()
+
+        if (response) {
+            this.teams = response;
+            this.filteredTeams = this.teams;
+        }
+        /*Requisão para a TeamService*/
     }
 
-    public updateFilter(): void {
-        this.filterService.setFilteredTeams(this.teamName)
+    private initSubscription(): void {
+        this.teamsFilterSubscription = this.filterService.getFilteredTeams().subscribe((filterValue: string) => {
+            this.filteredTeams = this.teams.filter(x => x.team.team_id.toString() == filterValue)
+        })
     }
-
 }

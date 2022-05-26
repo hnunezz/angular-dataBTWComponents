@@ -1,4 +1,14 @@
-<mat-form-field>
+<h4>Basic mat-select</h4>
+<mat-form-field appearance="fill">
+    <mat-label>Favorite food</mat-label>
+    <mat-select [(ngModel)]="teamIdBind" (ngModelChange)="emitNameFilter(); updateFilter()">
+        <mat-option *ngFor="let teams of allTeams" [value]="teams.team.team_id">
+            {{teams.team.team_name}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+<!-- <mat-form-field>
     <mat-label>Nome do time</mat-label>
     <input
         matInput
@@ -6,4 +16,4 @@
         [(ngModel)]="nameFilterBind"
         (ngModelChange)="emitNameFilter()"
     />
-</mat-form-field>
+</mat-form-field> -->

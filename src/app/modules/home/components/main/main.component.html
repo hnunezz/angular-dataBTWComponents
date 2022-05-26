@@ -1,5 +1,5 @@
-<app-filters [(nameFilterBind)]="teamName" (nameFilterBindChange)="updateFilter()"></app-filters>
-<app-list [teams]="teams$ | async"></app-list> <!-- Pipe que transforma o Observable em Objeto comum || json - Retorna esse objeto para o tipo JSON -->
+<app-filters [allTeams]="teams" [(teamIdBind)]="teamName"></app-filters>
+<app-list [teams]="filteredTeams"></app-list> <!-- Pipe que transforma o Observable em Objeto comum || json - Retorna esse objeto para o tipo JSON -->
 
 <br/>
 <p>{{ teamName }}</p>

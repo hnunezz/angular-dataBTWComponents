@@ -10,6 +10,7 @@ import { ListComponent } from './components/list/list.component';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { FilterService } from './services/filter.service';
+import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { FilterService } from './services/filter.service';
         HomeRoutingModule,
         HttpClientModule,
         MatInputModule,
-        FormsModule
+        FormsModule,
+        MatSelectModule
     ],
     providers: [
         TeamsService,

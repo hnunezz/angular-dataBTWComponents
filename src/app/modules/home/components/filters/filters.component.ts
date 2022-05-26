@@ -1,4 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Team } from 'src/app/shared/models/team';
+import { FilterService } from '../../services/filter.service';
 
 @Component({
     selector: 'app-filters',
@@ -7,9 +9,11 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class FiltersComponent implements OnInit {
 
-    @Input() public nameFilterBind!: string;
+    @Input() public allTeams: Team[] | null;//Popular o drop
+    @Input() public teamIdBind!: string;
 
-    @Output() public nameFilterBindChange: EventEmitter<string>;
+    @Output() public teamIdBindChange: EventEmitter<string>;
+
     /*
     ATENÇÃO
     Para que ocorra corretamente a ligação bidirecional
@@ -18,15 +22,20 @@ export class FiltersComponent implements OnInit {
         Output - nome'Change'
     */
 
-    constructor() {
-        this.nameFilterBindChange = new EventEmitter<string>();
+    constructor(private filterService: FilterService) {
+        this.teamIdBindChange = new EventEmitter<string>();
+        this.allTeams = new Array<Team>();
     }
 
-    ngOnInit(): void {
+    ngOnInit(): void { }
+
+    public emitNameFilter(): void {
+        this.teamIdBindChange.emit(this.teamIdBind);
     }
 
-    public emitNameFilter(): void{
-        this.nameFilterBindChange.emit(this.nameFilterBind);
+    public updateFilter(): void {
+        this.filterService.setFilteredTeams(this.teamIdBind);
     }
-
 }
+
+//Atualizar o drop para Multiselect
