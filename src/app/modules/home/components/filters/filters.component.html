@@ -1,13 +1,14 @@
-
-<mat-form-field>
-    <mat-label>Time</mat-label>
-    <mat-select [(ngModel)]="teamIdBind" (ngModelChange)="emitNameFilter(); updateFilter()">
-        <mat-option [value]="null">--</mat-option>
-        <mat-option *ngFor="let teams of allTeams" [value]="teams.team.team_id">
-            {{ teams.team.team_name }}
-        </mat-option>
-    </mat-select>
-</mat-form-field>
+<div>
+    <mat-form-field>
+        <mat-label>Time</mat-label>
+        <mat-select [(ngModel)]="teamIdBind" (ngModelChange)="emitNameFilter(); updateFilter()">
+            <mat-option [value]="null">--</mat-option>
+            <mat-option *ngFor="let teams of allTeams" [value]="teams.team.team_id">
+                {{ teams.team.team_name }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
 
 <!-- <mat-form-field>
     <mat-label>Nome do time</mat-label>

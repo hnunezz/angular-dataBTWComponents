@@ -40,18 +40,21 @@ export class MainComponent implements OnInit {
         //LastValueFrom => toPromise()
 
         if (response) {
-            this.teams = response;
-            this.filteredTeams = this.teams;
+            this.teams = response; // Teams: Variavel que retornar o time filtrado
+            this.filteredTeams = this.teams; // FilteredTeams: Variavel responsável a popular a lista
         }
         /*Requisão para a TeamService*/
     }
 
     private initSubscription(): void {
         this.teamsFilterSubscription = this.filterService.getFilteredTeams().subscribe((filterValue: string) => {
-            if(filterValue == null){
+            if (filterValue == null) { //Caso o value venha Null (Option '--') filtra todos os times novamente.
                 this.filteredTeams = this.teams
-            } else{
+            } else { //Caso contrário a filtragem é feita.
                 this.filteredTeams = this.teams.filter(x => x.team.team_id.toString() == filterValue)
+                /*Propriedade teams(Lista de times) é comparada com váriavel local filterValue(idTeam)
+                E atribui a filtereTeams o time atual.
+                */
             }
         })
     }

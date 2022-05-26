@@ -1,0 +1,11 @@
+div {
+    background: #5941b9;
+    border-bottom: 1px solid #00000042;
+    box-shadow: -18px -20px 20px 18px black;
+    display: flex;
+    justify-content: center;
+
+    .mat-form-field {
+        margin: 10px;
+    }
+}
