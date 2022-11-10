@@ -14,9 +14,5 @@ export class TeamsService {
 
     public getTeams(): Observable<Team[]> {
         return this.httpClient.get(this.teamsUrl) as Observable<Team[]>;
-        /*
-            Chamada do tipo GET;
-            Retorna um Observable do tipo Team[](Interface do mock JSON)
-        */
     }
 }
